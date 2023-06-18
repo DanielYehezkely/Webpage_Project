@@ -1,0 +1,376 @@
+/* Resetting all stats*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main page styling */
+html,
+body {
+  font-family: "Roboto Slab", serif;
+  line-height: 1.7em;
+  height: 1700px;
+  background: url(/images/kamil-pietrzak-qZ_LkR2AeJ8-unsplash.jpg) no-repeat
+    bottom center/cover;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(27, 26, 26);
+}
+
+/* Utilities and tools */
+
+.container {
+  margin: auto;
+  padding: 10px 20px;
+  overflow: auto;
+  max-width: 1100px;
+  overflow: hidden;
+}
+
+.h-coloring {
+  background: linear-gradient(45deg, blue, purple, red);
+}
+
+.marking-sub {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ef0707;
+  text-shadow: 1px 0px 0px black;
+}
+
+.box-spacing {
+  margin: 0px 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 1px;
+  padding: 5px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 1px 2px 4px black;
+}
+
+.btn:hover {
+  color: #000188;
+  background: linear-gradient(
+    45deg,
+    rgb(132, 132, 192),
+    rgb(191, 119, 191),
+    rgb(164, 71, 71)
+  );
+  cursor: pointer;
+}
+
+.clr {
+  clear: both;
+}
+
+.current{
+  background: #3c87b9;
+  border-radius: 1px;
+  height: 340px;
+  overflow: hidden;
+}
+
+
+
+/* Navbar */
+
+#navbar {
+  border: solid 1px black;
+  border-radius: 8px;
+  background-color: aliceblue;
+  color: #000188;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 30px 200px;
+  z-index: 3;
+}
+
+#navbar h1 {
+  text-align: center;
+  margin: 5px;
+  text-shadow: 1px 1px 1px #ef0707;
+}
+
+#navbar a {
+  color: #000188;
+}
+
+#navbar .link-box a:hover {
+  background: #3c87b9;
+  border-radius: 1px;
+  color: #ef0707;
+}
+
+#navbar a i {
+  color: black;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+.link-box {
+  position: absolute;
+  right: 100px;
+  top: 15px;
+  display: flex;
+}
+
+.icon-box {
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  display: flex;
+}
+
+/* primary-head */
+
+.primary-head {
+  height: 600px;
+}
+
+.ph-content {
+  position: absolute;
+  top: 200px;
+  left: 240px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ph-content h1 {
+  font-size: 53px;
+  font-weight: 9000;
+  opacity: 0.2;
+  font-style: italic;
+}
+
+.ph-content h2 {
+  font-size: 40px;
+  font-weight: 900;
+  border: none;
+  border-radius: 2px;
+  padding: 15px;
+  margin-left: 100px;
+  margin-top: -35px;
+  width: 80%;
+  position: absolute;
+  transform: skew(-15deg);
+}
+
+.ph-content p {
+  font-size: 15px;
+  margin-top: 40px;
+  color: black;
+  text-align: center;
+}
+
+/* -primary-Home-info */
+
+.primary-home-info-container {
+  position: absolute;
+  top: 500px;
+  z-index: 1;
+}
+.primary-home-info-container h3 {
+  padding-bottom: 15px;
+}
+
+.info-box {
+  text-align: center;
+  float: left;
+  background: white;
+  color: black;
+  width: 30%;
+  padding: 50px;
+  margin: 0px 25px;
+  border: none;
+  box-shadow: 0px 5px 30px rgb(196, 190, 190);
+}
+
+/* home-info */
+
+#home-info {
+  position: absolute;
+  top: 750px;
+  left: 0px;
+  height: 850px;
+  width: 100%;
+  background: url(/images/jeremy-bishop-RRpKyddFbxg-unsplash.jpg) no-repeat
+    center top/cover;
+  text-align: center;
+}
+
+.home-info-content h1 {
+  margin: 130px 0px 60px 0px;
+}
+
+.home-info-content span {
+  color: aqua;
+  text-shadow: 1px 1px 1px black;
+  font-size: 30px;
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  position: absolute;
+  opacity: 0.6;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  top: 1600px;
+  width: 100%;
+  height: 100px;
+}
+
+/* about-info */
+
+#about-info {
+  text-align: center;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 85%;
+  color: white;
+}
+
+#about-info h1 {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  margin: 40px auto;
+  padding: 10px;
+  width: 50%;
+  box-shadow: -1px 1px 10px black;
+}
+.act-bgc {
+  height: 1200px;
+  background: #333;
+  opacity: 0.7;
+  padding: 0px;
+}
+
+.act-info-one {
+  text-align: center;
+  position: absolute;
+  top: 230px;
+  left: 200px;
+  width: 70%;
+}
+
+.act-info-one img {
+  border-radius: 60%;
+  float: left;
+  width: 25%;
+}
+
+.act-info-two {
+  text-align: center;
+  position: absolute;
+  top: 580px;
+  left: 200px;
+  width: 70%;
+}
+
+.act-info-two img {
+  border-radius: 60%;
+  float: left;
+  width: 25%;
+}
+
+.act-info-three {
+  text-align: center;
+  position: absolute;
+  top: 910px;
+  left: 200px;
+  width: 70%;
+}
+
+.act-info-three img {
+  border-radius: 60%;
+  float: left;
+  width: 25%;
+}
+
+.act-btn {
+  position: absolute;
+  top: 1200px;
+  left: 50%;
+}
+
+/* contact form */
+
+#contact-form {
+  text-align: center;
+  position: absolute;
+  left: 227px;
+  top: 20%;
+  width: 70%;
+  height: 1150px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: -1px 1px 20px black;
+  color: white;
+  background: linear-gradient(45deg, blue, purple, red);
+}
+
+#contact-form h1 {
+  font-size: 40px;
+  padding: 20px;
+  margin: 30px 0px 60px 0px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.form-section {
+  margin-bottom: 40px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact-form textarea {
+  width: 30%;
+  height: 100px;
+  padding: 10px;
+  border: 1px #ddd solid;
+  border-radius: 2px;
+}
+
+#contact-form input {
+  width: 30%;
+  padding: 10px;
+  border: 1px #ddd solid;
+  border-radius: 2px;
+}
+
+#contact-info {
+  position: absolute;
+  top: 1200px;
+  left: 26px;
+}
+
+.icons-box i {
+  font-size: 40px;
+  margin: 20px 90px 5px 90px;
+}
+
+.icons-box h3 {
+  margin-top: 70px;
+  font-size: 15px;
+  font-style: italic;
+}
